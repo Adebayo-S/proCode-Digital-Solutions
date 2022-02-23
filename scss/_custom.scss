@@ -1,0 +1,75 @@
+//custom properties variables
+$zero: 0 !important;
+$none: none !important;
+
+
+//Theme colors
+$deepGreen: #475732;
+$vineWine:    #5c2f52;
+
+$primary:       $deepGreen;
+$secondary:     $vineWine;
+
+//White and gray colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+
+
+
+//Import Bootstrap v5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Accordion overrides
+$accordion-icon-color: $primary;
+$accordion-icon-active-color:  $secondary;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+/* With # */
+
+$whiteClay: #C0AE83;
+$lightGreen: #78885A;
+$charcoal: #0A0B0A;
+
+.showcase {
+    background: center/cover url('/img/landing-page-bg.jpg');
+    height: 100vh;
+}
+
+/* --------------------HAMBURGER MENU -----------------------------*/
+
+/* Remove button toggler border */
+.navbar-toggler {
+    border: $zero;
+
+    &:active,
+    &:focus {
+        border: $zero;
+        box-shadow: $none;
+      }
+}
+
+/* hamburger lines */
+.custom-menu {
+    width: 2rem;
+    height: 0.1875rem;
+    background-color: $white;
+    display: block;
+    transition: all 0.2s;
+}
+
+.md-bar {
+    margin: 0.3125rem;
+}
