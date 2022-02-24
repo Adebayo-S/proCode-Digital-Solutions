@@ -11147,4 +11147,39 @@ textarea.form-control-lg {
   margin: 0.3125rem;
 }
 
+/* menu on-open */
+.navbar-toggler .t-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .md-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .b-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+/* menu on-close */
+.navbar-toggler.collapsed .t-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .md-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .b-bar {
+  transform: rotate(0);
+}
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #777777;
+}
+
 /*# sourceMappingURL=style.css.map */
