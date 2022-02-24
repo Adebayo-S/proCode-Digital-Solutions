@@ -4,11 +4,12 @@ $none: none !important;
 
 
 //Theme colors
-$deepGreen: #475732;
-$vineWine:    #5c2f52;
+$themeColor: #606c38;
+$vineWine:    #7b1010;
+$orange: #dda15e;
 
-$primary:       $deepGreen;
-$secondary:     $vineWine;
+$primary:       $vineWine;
+$secondary:     $orange;
 
 //White and gray colors
 $white:    #fff;
@@ -23,8 +24,28 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
+$navbar-dark-color:                 rgba($white, .55) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+$navbar-dark-brand-color:                 $navbar-dark-active-color !default;
+$navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
+
+$alert-padding-y:               0;
+$alert-padding-x:               2rem;
+$alert-margin-bottom:           0;
+$alert-border-radius:           0;
+$alert-bg-scale:                0;
+$alert-border-scale:            0;
+$alert-color-scale:             0;
+$alert-dismissible-padding-r:   $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
 
 
+$font-family-sans-serif: "catamaran","Helvetica Neue","Helvetica","sans-serif";
+$font-family-serif: "DM Serif Display","Georgia","Times New Roman","serif";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
 //Import Bootstrap v5
@@ -48,63 +69,3 @@ $charcoal: #0A0B0A;
     height: 100vh;
 }
 
-/* --------------------HAMBURGER MENU -----------------------------*/
-
-/* Remove button toggler border */
-.navbar-toggler {
-    border: $zero;
-
-    &:active,
-    &:focus {
-        border: $zero;
-        box-shadow: $none;
-      }
-}
-
-/* hamburger lines */
-.custom-menu {
-    width: 2rem;
-    height: 0.1875rem;
-    background-color: $white;
-    display: block;
-    transition: all 0.2s;
-}
-
-.md-bar {
-    margin: 0.3125rem;
-}
-
-/* menu on-open */
-.navbar-toggler .t-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-
-.navbar-toggler .md-bar {
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.navbar-toggler .b-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-/* menu on-close */
-.navbar-toggler.collapsed .t-bar {
-    transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .md-bar {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .b-bar {
-    transform: rotate(0);
-}
-
-/* Color of Toggler when collapsed */
-.navbar-toggler.collapsed .toggler-icon {
-    background-color: #777777;
-}

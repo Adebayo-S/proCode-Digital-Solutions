@@ -1,0 +1,71 @@
+@use '../custom' as *;
+
+
+
+
+
+
+
+
+
+
+/* --------------------HAMBURGER MENU -----------------------------*/
+
+/* Remove button toggler border */
+.navbar-toggler {
+    border: $zero;
+
+    &:active,
+    &:focus {
+        border: $zero;
+        box-shadow: $none;
+    }
+}
+
+/* hamburger lines */
+.custom-menu {
+    width: 2rem;
+    height: 0.1875rem;
+    background-color: $white;
+    display: block;
+    transition: all 0.2s;
+}
+
+.md-bar {
+    margin: 0.3125rem;
+}
+
+/* menu on-open */
+.navbar-toggler .t-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .md-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .b-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/* menu on-close */
+.navbar-toggler.collapsed .t-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .md-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .b-bar {
+    transform: rotate(0);
+}
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #777777;
+}

@@ -7,10 +7,11 @@
 @use 'components/typography';
 
 /*-------------- IMPORT SECTIONS------------- */
+@use 'sections/alert';
 @use 'sections/clients';
 @use 'sections/contact';
 @use 'sections/footer';
 @use 'sections/header';
 @use 'sections/introduction';
-@use 'sections/solutions';
+@use 'sections/services';
 @use 'sections/testimonials';

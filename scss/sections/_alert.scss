@@ -1,0 +1,17 @@
+@use '../custom' as *;
+
+.alert {
+    font-size: 0.75rem;
+    background-color: $primary;
+    color: $white;
+    height: 2.5rem;
+}
+
+.alert a {
+    color: $secondary;
+}
+
+.alert p {
+    line-height: 0.8rem;
+    margin: auto;
+}
