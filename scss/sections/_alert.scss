@@ -1,6 +1,9 @@
 @use '../custom' as *;
 
 .alert {
+    //position: fixed;
+    display: block;
+    z-index: 20;
     font-size: 0.75rem;
     background-color: $primary;
     color: $white;
@@ -14,4 +17,11 @@
 .alert p {
     line-height: 0.8rem;
     margin: auto;
+}
+
+@include media-breakpoint-up(lg) {
+    .alert {
+        font-size: 1.2rem;
+        height: 5rem;
+    }
 }
